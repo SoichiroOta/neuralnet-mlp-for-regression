@@ -98,7 +98,7 @@ class NeuralNetMLPForRegression(object):
                                  '\nor X[[i]] for 1-sample regression')
 
         a1, z2, a2, z3, a3 = self._feedforward(X, self.w1, self.w2)
-        y_pred = z3[0][0]
+        y_pred = z3
         return y_pred
 
     def fit(self, X, y, print_progress=False):
